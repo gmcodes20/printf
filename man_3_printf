@@ -1,0 +1,48 @@
+_printf()								ALX C Project Manual								_printf()
+
+NAME
+	_printf - formatted output conversion
+
+SYNOPSIS
+	#include <unistd.h>
+	#include <stdlib.h>
+	#include <stdarg.h>
+
+	int _printf(const char *format, ...);
+
+DESCRIPTION
+	The arguments in the _printf() function produce output according to a format as described below. The function _printf() write output to stdout, 
+	the standard output stream.
+
+   Format of the format string
+	The format string is a character string, beginning and ending in its initial shift state, if any. The format string is composed of zero or more directives: 
+	ordinary characters (not %), which are copied unchanged to the output stream; and conversion specifications, each of which results in fetching zero or more 
+	subsequent arguments. Each conversion specification is introduced by the character %, and ends with a conversion specifier.
+
+   Conversion specifiers
+	A character that specifies the type of conversion to be applied.  The conversion specifiers and their meanings are:
+
+	c	The int argument is converted to an unsigned char, and the resulting character is written.
+
+	s	The const char * argument is expected to be a pointer to an array of character type (pointer to a string). Characters from the array are written 
+		up to (but not including) a terminating null byte ('\0'), the array must contain a terminating null byte.
+
+	%	A '%' is written. No argument is converted. The complete conversion specification is '%%'.
+
+	d, i	The int argument is converted to signed decimal notation.
+
+RETURN VALUE
+	Upon successful return, these functions return the number of characters printed (excluding the null byte used to end output to strings).
+
+	If an output error is encountered, a negative value is returned.
+
+CONFORMING TO
+	_printf(): A function that produces output according to a format.
+
+EXAMPLES
+	
+
+COLOPHON
+	This page is a manual for the _printf() function, which is printf()-like, created according to the specifications provided on the ALX intranet.
+
+									2022-04-20									_printf()
