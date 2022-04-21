@@ -6,7 +6,7 @@
  * @nbuf: number of bytes to print
  * Return: number of bytes printed.
  */
-int _putchar(char *buf, unsigned int nbuf)
+int print_buf(char *buf, unsigned int nbuf)
 {
 	return (write(1, buf, nbuf));
 }
