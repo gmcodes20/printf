@@ -30,7 +30,7 @@ Own Printf Function That Performs Formatted Output Conversion And Print Data.
 
 
 
-### holberton.h
+### main.h
 Header File Where All Prototypes Are Saved.
 
 
